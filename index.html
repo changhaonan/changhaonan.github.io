@@ -478,7 +478,7 @@
                 </td>
               </tr>
 
-              <!-- ral -->
+              <!-- iros19 -->
               <tr onmouseout="geo_stop()" onmouseover="geo_start()" bgcolor="#ffffff">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -517,6 +517,50 @@
                   <p>
                     propose GeoFusion, a SLAM-based scene estimation method for building an object-level semantic map in dense
                     clutter.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- iros19 -->
+              <tr onmouseout="glass_stop()" onmouseover="glass_start()" bgcolor="#ffffff">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='glass_image'><video width=100% height=100% muted autoplay loop>
+                        <source src="images/iros2019/grasp_loc.png" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <img src='images/iros2019/grasp_loc.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function glass_start() {
+                      document.getElementById('glass_image').style.opacity = "1";
+                    }
+
+                    function glass_stop() {
+                      document.getElementById('glass_image').style.opacity = "0";
+                    }
+                    glass_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2003.12610">
+                    <span class="papertitle">glassfusion: glassmetric consistency informed scene estimation in dense clutter
+                    </span>
+                  </a>
+                  <br>
+                  <a href="https://scholar.google.com/citations?user=LWKGD_kAAAAJ&hl=en">Zheming Zhou</a>,
+                  <a href="https://www.tianyangpan.com/">Tianyang Pan</a>,
+                  <a href="https://www.linkedin.com/in/shiyu-wu-713709261/">Shiyu Wu</a>,
+                  <strong>Haonan Chang</strong>,
+                  <a href="https://web.eecs.umich.edu/~ocj/">Chad Jenkins</a>
+                  <br>
+                  <em>IROS</em>, 2019 &nbsp
+                  <br>
+                  <a href="https://arxiv.org/abs/2003.12610">project page</a>
+                  <p></p>
+                  <p>
+                    Transparent objects are prevalent across many environments of interest for dexterous robotic manipulation. GlassLoc classifies graspable locations in space informed by a Depth
+                    Likelihood Volume (DLV) descriptor.
                   </p>
                 </td>
               </tr>
