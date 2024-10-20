@@ -118,7 +118,7 @@
                 </td>
               </tr>
 
-              <tr onmouseout="vkt_stop()" onmouseover="vkt_start()">
+              <tr onmouseout="vkt_stop()" onmouseover="vkt_start()" bgcolor="#ffffff">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='vkt_image'><video width=100% height=100% muted autoplay loop>
@@ -162,7 +162,7 @@
               </tr>
 
               <!-- iros2024 -->
-              <tr onmouseout="lgmcts_stop()" onmouseover="lgmcts_start()">
+              <tr onmouseout="lgmcts_stop()" onmouseover="lgmcts_start()" bgcolor="#ffffff">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='lgmcts_image'><video width=100% height=100% muted autoplay loop>
@@ -210,7 +210,7 @@
                 </td>
               </tr>
 
-              <tr onmouseout="insert1_stop()" onmouseover="insert1_start()" bgcolor="#ffffd0">
+              <tr onmouseout="insert1_stop()" onmouseover="insert1_start()" bgcolor="#ffffff">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='insert1_image'><video width=100% height=100% muted autoplay loop>
@@ -251,7 +251,7 @@
                 </td>
               </tr>
 
-              <tr onmouseout="dap_stop()" onmouseover="dap_start()" bgcolor="#ffffd0">
+              <tr onmouseout="dap_stop()" onmouseover="dap_start()" bgcolor="#ffffff">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='dap_image'><video width=100% height=100% muted autoplay loop>
@@ -346,7 +346,7 @@
                 </td>
               </tr>
 
-              <tr onmouseout="ovir_stop()" onmouseover="ovir_start()">
+              <tr onmouseout="ovir_stop()" onmouseover="ovir_start()" bgcolor="#ffffff">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='ovir_image'><video width=100% height=100% muted autoplay loop>
@@ -393,7 +393,7 @@
               </tr>
 
               <!-- iros22 -->
-              <tr onmouseout="mono_star_stop()" onmouseover="mono_star_start()">
+              <tr onmouseout="mono_star_stop()" onmouseover="mono_star_start()" bgcolor="#ffffff">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='mono_star_image'><video width=100% height=100% muted autoplay loop>
@@ -435,8 +435,8 @@
                 </td>
               </tr>
 
-              <!-- icra23 -->
-              <tr onmouseout="star_stop()" onmouseover="star_start()">
+              <!-- iros22 -->
+              <tr onmouseout="star_stop()" onmouseover="star_start()" bgcolor="#ffffff">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='star_image'><video width=100% height=100% muted autoplay loop>
@@ -474,6 +474,49 @@
                   <p>
                     We present the first real-time system capable of tracking and reconstructing, individually, every visible object in a given scene, without any form of prior on the rigidness of the
                     objects, texture existence, or object category.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- ral -->
+              <tr onmouseout="geo_stop()" onmouseover="geo_start()" bgcolor="#ffffff">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='geo_image'><video width=100% height=100% muted autoplay loop>
+                        <source src="images/ral/geo_fusion.png" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <img src='images/ral/geo_fusion.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function geo_start() {
+                      document.getElementById('geo_image').style.opacity = "1";
+                    }
+
+                    function geo_stop() {
+                      document.getElementById('geo_image').style.opacity = "0";
+                    }
+                    geo_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2003.12610">
+                    <span class="papertitle">Geofusion: Geometric consistency informed scene estimation in dense clutter
+                    </span>
+                  </a>
+                  <br>
+                  <a href="https://scholar.google.com/citations?user=3NagJCUAAAAJ&hl=en">Zhiqiang Sui</a>
+                  <strong>Haonan Chang</strong>,
+                  <a href="https://scholar.google.com/citations?user=6dhIxEgAAAAJ&hl=en">Ning Xu</a>,
+                  <a href="https://web.eecs.umich.edu/~ocj/">Chad Jenkins</a>
+                  <br>
+                  <em>RAL</em>, 2020 &nbsp
+                  <br>
+                  <a href="https://arxiv.org/abs/2003.12610">project page</a>
+                  <p></p>
+                  <p>
+                    propose GeoFusion, a SLAM-based scene estimation method for building an object-level semantic map in dense
+                    clutter.
                   </p>
                 </td>
               </tr>
