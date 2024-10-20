@@ -62,7 +62,7 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <h2>Research</h2>
                   <p>
-                    I have a broad interest in many different aspects of robotics, my research works covers perception, planning and control of robotics. Some papers are <span
+                    I have a broad interest in many different aspects of robotics, my research works cover perception, planning and control of robotics. Some papers are <span
                       class="highlight">highlighted</span>.
                   </p>
                 </td>
@@ -71,6 +71,52 @@
           </table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              <tr onmouseout="arp_stop()" onmouseover="arp_start()" bgcolor="#ffffff">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='arp_image'><video width=100% height=100% muted autoplay loop>
+                        <source src="images/iclr2025/arp.gif" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <img src='images/iclr2025/arp.gif' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function arp_start() {
+                      document.getElementById('arp_image').style.opacity = "1";
+                    }
+
+                    function arp_stop() {
+                      document.getElementById('arp_image').style.opacity = "0";
+                    }
+                    arp_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://github.com/mlzxy/arp">
+                    <span class="papertitle">Autoregressive Action Sequence Learning for Robotic Manipulation
+                    </span>
+                  </a>
+                  <br>
+                  <a href="https://mlzxy.github.io/">Xinyu Zhang</a>,
+                  <a href="https://jaysparrow.github.io/">Yuhan Liu</a>,
+                  <strong>Haonan Chang</strong>,
+                  <a href="https://liamschramm.com/">Liam Schramm</a>,
+                  <a href="https://scholar.google.com/citations?user=8AF3RCsAAAAJ&hl=en">Abdeslam Boularias</a>
+                  <br>
+                  <em>In Submission</em>, 2024 &nbsp
+                  <br>
+                  <a href="https://github.com/mlzxy/arp">project page</a>
+                  /
+                  <a href="https://arxiv.org/abs/2410.03132">arXiv</a>
+                  <p></p>
+                  <p>
+                    We propose the Chunking Causal Transformer (CCT), which extends the next-single-token prediction of causal transformers to support multi-token prediction in a single pass. We
+                    evaluate ARP across diverse robotic manipulation environments, including Push-T, ALOHA, and RLBench, and show that it outperforms the state-of-the-art methods in all tested
+                    environments, while being more efficient in computation and parameter sizes.
+                  </p>
+                </td>
+              </tr>
+
               <tr onmouseout="a3vlm_stop()" onmouseover="a3vlm_start()" bgcolor="#ffffd0">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
