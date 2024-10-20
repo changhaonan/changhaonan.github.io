@@ -71,16 +71,14 @@
           </table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
-
-
               <tr onmouseout="a3vlm_stop()" onmouseover="a3vlm_start()" bgcolor="#ffffd0">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='a3vlm_image'><video width=100% height=100% muted autoplay loop>
-                        <source src="images/a3_vlm.gif" type="video/mp4">
+                        <source src="images/corl2024/a3_vlm.gif" type="video/mp4">
                         Your browser does not support the video tag.
                       </video></div>
-                    <img src='images/a3_vlm.gif' width="160">
+                    <img src='images/corl2024/a3_vlm.gif' width="160">
                   </div>
                   <script type="text/javascript">
                     function a3vlm_start() {
@@ -116,6 +114,49 @@
                   <p></p>
                   <p>
                     We proposed an Articulation-aware Vision Language Model that is able to located the task-related articulation structure and affordance based on language task description.
+                  </p>
+                </td>
+              </tr>
+
+              <tr onmouseout="vkt_stop()" onmouseover="vkt_start()" bgcolor="#ffffd0">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='vkt_image'><video width=100% height=100% muted autoplay loop>
+                        <source src="images/corl2024/vkt.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <img src='images/corl2024/vkt.mp4' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function vkt_start() {
+                      document.getElementById('vkt_image').style.opacity = "1";
+                    }
+
+                    function vkt_stop() {
+                      document.getElementById('vkt_image').style.opacity = "0";
+                    }
+                    vkt_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://mlzxy.github.io/visual-kinetic-chain/">
+                    <span class="papertitle">Scaling Manipulation Learning with Visual Kinematic Chain Prediction
+                    </span>
+                  </a>
+                  <br>
+                  <a href="https://mlzxy.github.io/">Xinyu Zhang</a>,
+                  <a href="https://jaysparrow.github.io/">Yuhan Liu</a>,
+                  <strong>Haonan Chang</strong>,
+                  <a href="https://scholar.google.com/citations?user=8AF3RCsAAAAJ&hl=en">Abdeslam Boularias</a>,
+                  <br>
+                  <em>CoRL</em>, 2024 &nbsp
+                  <br>
+                  <a href="https://mlzxy.github.io/visual-kinetic-chain/">project page</a>
+                  /
+                  <a href="https://arxiv.org/abs/2406.07837">arXiv</a>
+                  <p></p>
+                  <p>
+                    We proposed unified representation, i.e. Visual Kinematic Chain, to model different robotics tasks into a unified reprsentation for scalable training.
                   </p>
                 </td>
               </tr>
